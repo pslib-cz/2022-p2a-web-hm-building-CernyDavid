@@ -4,24 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HM building</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/layout.css">
 </head>
 <body>
+    <nav>
+        <img class="header__logo" src="./media/logo.png">
+        <menu>
+            <li></li>
+        </menu>
+    </nav>
     <div class="header">
-        <img class="logo" src="./media/logo.png">
-        <img class="header-image" src="./media/pageheader-1920w.jpg">
-        <h1>HM Building.cz s.r.o.</h1>
+        <h1 class="header__heading">HM Building.cz s.r.o.</h1>
+        <p class="header__text">Liberecká stavební společnost</p>
     </div>
     <div class="sluzby">
-        <h2>Využijte škálu našich <span class="highlight">služeb</span></h2>
+        <h2 class="sluzby__heading">Využijte škálu našich <span class="highlight">služeb</span></h2>
+        <p class="sluzby__description">Ačkoliv provádíme především průmyslové stavby, není pro nás problém postavit Vám rodinný domek na klíč, nebo jen hrubou stavbu. Nejsou nám cizí ani rekonstrukce budov a jejich údržba a to včetně okolních ploch.</p>
+        <div class="sluzby__main">
+            <h3 class="sluzby__item-heading">Novostavby</h3>
+            <p class="sluzby__item-text">Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
+            <p class="sluzby__item-text">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
+            <button></button>
+            <h3 class="sluzby__item-heading">Průmyslové stavby</h3>
+            <p class="sluzby__item-text">Realizujeme průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</p>
+            <button></button>
+            <h3 class="sluzby__item-heading">Rekonstrukce domů a jiných staveb</h3>
+            <p class="sluzby__item-text">Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů. Pro naše klienty zajišťujeme dodatečné izolování objektů, zateplení objektů, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
+            <button></button>
+            <h3 class="sluzby__item-heading">Komunikace a zpevněné plochy</h3>
+            <p class="sluzby__item-text">Komunikace a zpevněné plochy provádíme včetně zemních prací, konstrukcí podkladních a souvisejících objektů, jako jsou odvodnění, zpevnění svahů, opěrné zdi atd.</p>
+            <button></button>
+        </div>
+        
     </div>
-    <div class="duvera"></div>
+    <div class="duvera">
+        <p class="duvera__text">Naše firma nabízí své služby ve stavebnictví od roku 2015.</p>   
+        <p class="duvera__text"> Za kvalitu naší práce ručíme.</p>
+        <button class="duvera__button"></button>
+    </div>
     <div class="reference">
-        <h2>Rádi vám ukážeme naše<span class="highlight">reference</span></h2>
+        <h2 class="reference__heading">Rádi vám ukážeme naše <span class="highlight">reference</span></h2>
+        <p class="reference__description">Stojí za námi kvalitně vyhotovené zakázky dle konkrétních požadavků zadavatelů podepřené letitými zkušenostmi ve stavebnictví. To, že obrátit se na právě nás je vhodná volba potvrdí naši klienti, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+        <div class="reference__main">
+            <h3 class="reference__item-heading">Hasičká zbrojnice</h3>
+            <p clas="reference__item-text">celková rekonstrukce</p>
+            <h3 class="reference__item-heading">Samoobslužná prádelna</h3>
+            <p clas="reference__item-text">stavební úpray a opravy</p>
+            <h3 class="reference__item-heading">Venkovní plochy restyl</h3>
+            <p clas="reference__item-text">provedení venkovních ploch</p>
+        </div>
+        <button class="reference__button"></button>
     </div>
     <div clas="footer">
-        <h2>Plácneme si pro Váš projekt?</h2>
-        <p></p>
+        <h2 clas="footer__heading">Plácneme si pro Váš projekt?</h2>
+        <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <button class="footer__button"></button>
     </div>
 </body>
 </html>
