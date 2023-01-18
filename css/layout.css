@@ -1,4 +1,28 @@
 .header {
     display: block;
     height: 269px;
+    position: relative;
+}
+.header__textbox {
+    position: absolute;
+    left: 20px;
+    top: 179px;
+}
+.sluzby__item {
+    display: block;
+    width: 320px;
+}
+.sluzby__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.sluzby__header {
+    width: 320px;
+    margin: 55px auto 75px auto;
+}
+.duvera__textbox {
+    display: block;
+    margin: 0px 20px;
+    padding-top: 23px;
 }
