@@ -12,6 +12,9 @@
     display: block;
     width: 320px;
 }
+.sluzby__item-heading {
+    margin: 18px 0px 10px 0px
+}
 .sluzby__main {
     display: grid;
     grid-template-columns: 1fr;
@@ -25,4 +28,28 @@
     display: block;
     margin: 0px 20px;
     padding-top: 23px;
+}
+.reference__item {
+    display: block;
+    width: 320px;
+}
+.reference__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.reference__header {
+    width: 320px;
+    margin: 16px auto 62px auto;
+}
+.reference__item-heading {
+    margin-bottom: 6px;
+}
+.reference__item-text {
+    margin: 0px;
+}
+.reference__item-textbox {
+    width: 320px;
+    margin: 10px auto 35px auto;
+    text-align: center;
 }

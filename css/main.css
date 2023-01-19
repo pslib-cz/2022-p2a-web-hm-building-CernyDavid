@@ -1,3 +1,7 @@
+:root {
+    --primary: #EB6C27;
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -52,9 +56,6 @@ h3 {
 .sluzby__item-img--odd {
     border-radius: 0px 0px 40px 0px;
 }
-.sluzby__item-heading {
-    margin: 18px 0px 10px 0px
-}
 .duvera {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../media/background-CTAblock-4460w.jpg);
     height: 190px;
@@ -72,4 +73,14 @@ h3 {
     background-blend-mode: normal, normal, hue, normal;
     background-position: center center;
     background-size: cover;
+}
+.reference__item-img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+.highlight {
+    color: var(--primary);
 }
