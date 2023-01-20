@@ -31,16 +31,15 @@ h3 {
 .header__heading {
     color: white;
     margin: 0;
+    text-align: center;
 }
-.header__text {
+.header__subheading {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: -0.05em;
-    text-align: center;
-    margin: 0;
 }
 .sluzby__item-img {
     width: 100%;
@@ -58,14 +57,17 @@ h3 {
 }
 .duvera {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../media/background-CTAblock-4460w.jpg);
-    height: 190px;
+    min-height: 190px;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: none;
+    margin-top: 14px;
 }
 .duvera__text {
     font-weight: 700;
     font-size: 17px;
     line-height: 21px;
+    margin-top: 0px;
     color: white;
 }
 .header {
@@ -73,6 +75,9 @@ h3 {
     background-blend-mode: normal, normal, hue, normal;
     background-position: center center;
     background-size: cover;
+}
+.navbar {
+    background-color: white;
 }
 .reference__item-img {
     width: 100%;
@@ -83,4 +88,21 @@ h3 {
 }
 .highlight {
     color: var(--primary);
+}
+.button {
+    display: block;
+    padding: 12px 40px 12px 40px;
+}
+.button--outlined {
+    color: var(--primary);
+    border: 1px dashed var(--primary);
+    background-color: white;
+}
+.button--colored {
+    color: white;
+    background-color: var(--primary);
+    border-style: none;
+}
+.footer {
+    background-color: var(--primary);
 }

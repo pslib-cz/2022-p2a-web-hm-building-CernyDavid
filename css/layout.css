@@ -1,12 +1,7 @@
 .header {
     display: block;
-    height: 269px;
+    min-height: 269px;
     position: relative;
-}
-.header__textbox {
-    position: absolute;
-    left: 20px;
-    top: 179px;
 }
 .sluzby__item {
     display: block;
@@ -26,7 +21,7 @@
 }
 .duvera__textbox {
     display: block;
-    margin: 0px 20px;
+    margin: 0px 1em 20px 1em;
     padding-top: 23px;
 }
 .reference__item {
@@ -52,4 +47,16 @@
     width: 320px;
     margin: 10px auto 35px auto;
     text-align: center;
+}
+.button--duvera {
+    margin-left: 1em;
+}
+.button--sluzby {
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+.button--reference {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8px;
 }

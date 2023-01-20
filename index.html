@@ -9,17 +9,14 @@
     <link rel="stylesheet" href="./css/layout.css">
 </head>
 <body>
-    <nav>
-        <img class="header__logo" src="./media/logo.png" alt="logo firmy">
-        <menu>
-
-        </menu>
-    </nav>
     <div class="header">
-        <div class="header__textbox">
-            <h1 class="header__heading">HM Building.cz s.r.o.</h1>
-            <p class="header__text">Liberecká stavební společnost</p>
-        </div>
+        <nav class="navbar">
+            <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
+            <menu class="navbar__menu">
+    
+            </menu>
+        </nav>
+        <h1 class="header__heading">HM Building.cz s.r.o. <span class="header__subheading">liberecká stavební společnost</span></h1>
     </div>
     <div class="sluzby">
         <div class="sluzby__header">
@@ -33,25 +30,25 @@
                 <h3 class="sluzby__item-heading">Novostavby</h3>
                 <p class="sluzby__item-text">Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
                 <p class="sluzby__item-text">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                <button></button>
+                <button class="button button--sluzby button--outlined">Zobrazit více</button>
             </div>
             <div class="sluzby__item">
                 <img class="sluzby__item-img sluzby__item-img--even" src="./media/sluzba-prumyslove-stavby-1920w.jpg" alt="průmyslová stavba">
                 <h3 class="sluzby__item-heading">Průmyslové stavby</h3>
                 <p class="sluzby__item-text">Realizujeme průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</p>
-                <button></button>
+                <button class="button button--sluzby button--outlined">Zobrazit více</button>
             </div>
             <div class="sluzby__item">
                 <img class="sluzby__item-img sluzby__item-img--odd" src="./media/sluzba-rekonstrukce-1920w.jpg" alt="rekonstrukce domu">
                 <h3 class="sluzby__item-heading">Rekonstrukce domů a jiných staveb</h3>
                 <p class="sluzby__item-text">Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů. Pro naše klienty zajišťujeme dodatečné izolování objektů, zateplení objektů, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
-                <button></button>
+                <button class="button button--sluzby button--outlined">Zobrazit více</button>
             </div>
             <div class="sluzby__item">
                 <img class="sluzby__item-img sluzby__item-img--even" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="práce na silnici">
                 <h3 class="sluzby__item-heading">Komunikace a zpevněné plochy</h3>
                 <p class="sluzby__item-text">Komunikace a zpevněné plochy provádíme včetně zemních prací, konstrukcí podkladních a souvisejících objektů, jako jsou odvodnění, zpevnění svahů, opěrné zdi atd.</p>
-                <button></button>
+                <button class="button button--sluzby button--outlined">Zobrazit více</button>
             </div>
         </div>
         
@@ -61,7 +58,7 @@
             <p class="duvera__text">Naše firma nabízí své služby ve stavebnictví od roku 2015.</p>   
             <p class="duvera__text"> Za kvalitu naší práce ručíme.</p>
         </div>
-        <button class="duvera__button"></button>
+        <button class="button button--duvera button--colored">Přesvědčit se</button>
     </div>
     <div class="reference">
         <div class="reference__header">
@@ -92,12 +89,12 @@
                 </div>
             </div>
         </div>
-        <button class="reference__button"></button>
+        <button class="button button--reference button--colored">Více referencí</button>
     </div>
-    <div clas="footer">
-        <h2 clas="footer__heading">Plácneme si pro Váš projekt?</h2>
+    <div class="footer">
+        <h2 class="footer__heading">Plácneme si pro Váš projekt?</h2>
         <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <button class="footer__button"></button>
+        <button class="button">Nezávazně poptat</button>
     </div>
 </body>
 </html>
