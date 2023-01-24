@@ -11,12 +11,15 @@
 <body>
     <div class="header">
         <nav class="navbar">
-            <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
-            <menu class="navbar__menu">
-    
-            </menu>
+            <div class="navbar__main">
+                <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
+                <p class="navbar__hamburger-text">MENU</p>
+            </div>
         </nav>
-        <h1 class="header__heading">HM Building.cz s.r.o. <span class="header__subheading">liberecká stavební společnost</span></h1>
+        <div class="header__main">
+            <h1 class="header__heading">HM Building.cz s.r.o.
+                <span class="header__subheading">liberecká stavební společnost</span></h1>
+        </div>
     </div>
     <div class="sluzby">
         <div class="sluzby__header">
@@ -54,11 +57,13 @@
         
     </div>
     <div class="duvera">
-        <div class="duvera__textbox">
+        <div class="duvera__content">
+            <div class="duvera__textbox">
             <p class="duvera__text">Naše firma nabízí své služby ve stavebnictví od roku 2015.</p>   
             <p class="duvera__text"> Za kvalitu naší práce ručíme.</p>
+            </div>
+            <button class="button button--duvera button--colored">Přesvědčit se</button>
         </div>
-        <button class="button button--duvera button--colored">Přesvědčit se</button>
     </div>
     <div class="reference">
         <div class="reference__header">
@@ -94,7 +99,7 @@
     <div class="footer">
         <h2 class="footer__heading">Plácneme si pro Váš projekt?</h2>
         <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <button class="button">Nezávazně poptat</button>
+        <button class="button button--footer">Nezávazně poptat</button>
     </div>
 </body>
 </html>

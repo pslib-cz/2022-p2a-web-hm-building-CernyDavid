@@ -1,7 +1,23 @@
+body {
+    margin: 0px;
+}
 .header {
     display: block;
-    min-height: 269px;
+    width: 100vw;
     position: relative;
+}
+.navbar__main {
+    height: 109px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__main {
+    height: 269px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
 }
 .sluzby__item {
     display: block;
@@ -21,8 +37,16 @@
 }
 .duvera__textbox {
     display: block;
-    margin: 0px 1em 20px 1em;
-    padding-top: 23px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.duvera__content {
+    margin-left: 5%;
+}
+.duvera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .reference__item {
     display: block;
@@ -48,9 +72,6 @@
     margin: 10px auto 35px auto;
     text-align: center;
 }
-.button--duvera {
-    margin-left: 1em;
-}
 .button--sluzby {
     margin-top: 18px;
     margin-bottom: 40px;
@@ -59,4 +80,21 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 8px;
+}
+.footer {
+    height: 75vw;
+    max-height: 360px;
+    width: 100vw;
+    margin-top: 96px;
+}
+.button--footer {
+    margin: 26px auto 41px auto;
+}
+.footer__heading {
+    padding-top: 66px;
+    padding-bottom: 26px;
+    margin: 0px;
+}
+.footer__text {
+    margin: 0px;
 }

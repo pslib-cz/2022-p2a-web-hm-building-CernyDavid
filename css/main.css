@@ -57,10 +57,11 @@ h3 {
 }
 .duvera {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../media/background-CTAblock-4460w.jpg);
-    min-height: 190px;
+    height: 50vw;
+    max-height: 460px;
     background-position: center center;
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     margin-top: 14px;
 }
 .duvera__text {
@@ -70,7 +71,7 @@ h3 {
     margin-top: 0px;
     color: white;
 }
-.header {
+.header__main {
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../media/pageheader-1920w.jpg);
     background-blend-mode: normal, normal, hue, normal;
     background-position: center center;
@@ -78,6 +79,15 @@ h3 {
 }
 .navbar {
     background-color: white;
+}
+.navbar__logo {
+    height: 44px;  
+}
+.navbar__hamburger-text {
+    padding: 20px;
+    margin: 0px;
+    color: #3A3A3A;
+    font-size: 12px;
 }
 .reference__item-img {
     width: 100%;
@@ -92,6 +102,7 @@ h3 {
 .button {
     display: block;
     padding: 12px 40px 12px 40px;
+    font-weight: 700;
 }
 .button--outlined {
     color: var(--primary);
@@ -103,6 +114,16 @@ h3 {
     background-color: var(--primary);
     border-style: none;
 }
+.button--footer {
+    background-color: white;
+    color: var(--primary);
+    border-style: none;
+    padding: 20px 49px;
+}
 .footer {
     background-color: var(--primary);
+}
+.footer__heading, .footer__text {
+    text-align: center;
+    color: white;
 }
