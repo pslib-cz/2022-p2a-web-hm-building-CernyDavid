@@ -11,14 +11,20 @@
 <body>
     <div class="header">
         <nav class="navbar">
-            <div class="navbar__main">
-                <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
-                <p class="navbar__hamburger-text">MENU</p>
-            </div>
+            <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
+            <img class="navbar__hamburger" src="./media/icon hamburger-menu.svg" alt="hamburger menu">
+            <menu class="navbar__menu">
+                <li>DOMŮ</li>
+                <li>SLUŽBY</li>
+                <li>REFERENCE</li>
+                <li>O NÁS</li>
+                <li>KONTAKT</li>
+            </menu>
         </nav>
         <div class="header__main">
+            <button class="button button--colored button--header">pokračovat</button>  
             <h1 class="header__heading">HM Building.cz s.r.o.
-                <span class="header__subheading">liberecká stavební společnost</span></h1>
+                <span class="header__subheading">liberecká stavební společnost</span></h1>  
         </div>
     </div>
     <div class="sluzby">
@@ -30,28 +36,36 @@
         <div class="sluzby__main">
             <div class="sluzby__item">
                 <img class="sluzby__item-img sluzby__item-img--odd" src="./media/sluzba-novostavby-1200w.jpg" alt="stavba domu">
-                <h3 class="sluzby__item-heading">Novostavby</h3>
-                <p class="sluzby__item-text">Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
-                <p class="sluzby__item-text">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                <button class="button button--sluzby button--outlined">Zobrazit více</button>
+                <div class="sluzby__content">
+                    <h3 class="sluzby__item-heading">Novostavby</h3>
+                    <p class="sluzby__item-text">Dle požadavků investora jsme schopní dodat kompletní stavbu na klíč, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
+                    <p class="sluzby__item-text">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
+                    <button class="button button--sluzby button--outlined">Zobrazit více</button>
+                </div>
             </div>
             <div class="sluzby__item">
                 <img class="sluzby__item-img sluzby__item-img--even" src="./media/sluzba-prumyslove-stavby-1920w.jpg" alt="průmyslová stavba">
-                <h3 class="sluzby__item-heading">Průmyslové stavby</h3>
-                <p class="sluzby__item-text">Realizujeme průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</p>
-                <button class="button button--sluzby button--outlined">Zobrazit více</button>
+                <div class="sluzby__content">
+                    <h3 class="sluzby__item-heading">Průmyslové stavby</h3>
+                    <p class="sluzby__item-text">Realizujeme průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</p>
+                    <button class="button button--sluzby button--outlined">Zobrazit více</button>                    
+                </div>
             </div>
             <div class="sluzby__item">
                 <img class="sluzby__item-img sluzby__item-img--odd" src="./media/sluzba-rekonstrukce-1920w.jpg" alt="rekonstrukce domu">
-                <h3 class="sluzby__item-heading">Rekonstrukce domů a jiných staveb</h3>
-                <p class="sluzby__item-text">Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů. Pro naše klienty zajišťujeme dodatečné izolování objektů, zateplení objektů, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
-                <button class="button button--sluzby button--outlined">Zobrazit více</button>
+                <div class="sluzby__content">
+                    <h3 class="sluzby__item-heading">Rekonstrukce domů a jiných staveb</h3>
+                    <p class="sluzby__item-text">Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů. Pro naše klienty zajišťujeme dodatečné izolování objektů, zateplení objektů, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
+                    <button class="button button--sluzby button--outlined">Zobrazit více</button>                    
+                </div>
             </div>
             <div class="sluzby__item">
                 <img class="sluzby__item-img sluzby__item-img--even" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="práce na silnici">
-                <h3 class="sluzby__item-heading">Komunikace a zpevněné plochy</h3>
-                <p class="sluzby__item-text">Komunikace a zpevněné plochy provádíme včetně zemních prací, konstrukcí podkladních a souvisejících objektů, jako jsou odvodnění, zpevnění svahů, opěrné zdi atd.</p>
-                <button class="button button--sluzby button--outlined">Zobrazit více</button>
+                <div class="sluzby__content">
+                    <h3 class="sluzby__item-heading">Komunikace a zpevněné plochy</h3>
+                    <p class="sluzby__item-text">Komunikace a zpevněné plochy provádíme včetně zemních prací, konstrukcí podkladních a souvisejících objektů, jako jsou odvodnění, zpevnění svahů, opěrné zdi atd.</p>
+                    <button class="button button--sluzby button--outlined">Zobrazit více</button>                    
+                </div>
             </div>
         </div>
         
