@@ -27,7 +27,7 @@ body {
 }
 .header__heading {
     display: block;
-    width: 360px;
+    max-width: 360px;
     margin: 0px auto 20px auto;
 }
 .sluzby__item {
@@ -70,7 +70,7 @@ body {
 }
 .reference__header {
     width: 320px;
-    margin: 16px auto 62px auto;
+    margin: 46px auto 62px auto;
 }
 .reference__item-heading {
     margin-bottom: 6px;
@@ -112,15 +112,75 @@ body {
 .button--header {
     display: none;
 }
+
 .navbar__menu {
+    display: flex;
+}
+.navbar__menu--hidden {
     display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 960px) {
+
+    .navbar__menu {
+        width: 85vw;
+        flex-direction: column;
+        position: absolute;
+        gap: 16px;
+        top: 116px;
+        padding: 25px;
+        left: 0;
+        right: 0;
+        margin: 0px auto 0px auto;
+        background-color: var(--primary);
+    }
+
+    .navbar__menu::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: var(--primary);
+        width: 25px;
+        height: 25px;
+        rotate: 45deg;
+        top: -10px;
+        right: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 760px) {
+    .navbar {
+        padding: 0px 40px;
+    }
+    .header__heading {
+        width: 660px;
+    }
+    
+    .sluzby__item {
+        width: 480px;
+    }
+    .sluzby__header {
+        text-align: center;
+        width: 480px;
+    }
+    .sluzby__item-img {
+        height: 250px;
+    }
+    .reference__header {
+        width: 520px;
+        text-align: center;
+    }
+    .reference__item {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 961px) {
     .navbar {
         height: 92px;
         padding: 0px;
-        width: 1100px;
+        width: 90vw;
         position: absolute;
         top: 46px;
         left: 0;
@@ -132,10 +192,14 @@ body {
         display: none;
     }
     .navbar__menu {
+        height: 100%;
+        margin: 0px;
         display: flex;
+        padding: 0px;
+        align-items: center;
     }
     .header__heading {
-        width: 900px;
+        width: 80%;
         margin-bottom: 65px;
     }
     .button--header {
@@ -146,24 +210,26 @@ body {
     }
     .header__main {
         max-height: 1080px;
+        margin-bottom: 150px;
     }
 
     .sluzby__header {
-        width: 890px;
+        width: 65vw;
         text-align: center;
-        margin-top: 150px;
+        margin-top: 0px;
         margin-bottom: 154px;
     }
     .sluzby__item {
         display: grid;
-        grid-template-columns: 540px 1fr;
-        width: 1100px;
+        align-items: center;
+        grid-template-columns: 400px 1fr;
+        width: 80vw;
         margin-bottom: 100px;
         gap: 100px;
     }
 
     .sluzby__item:nth-child(even) {
-        grid-template-columns: 1fr 540px;
+        grid-template-columns: 1fr 400px;
     }
 
     .sluzby__item:nth-child(even) .sluzby__item-img {
@@ -177,17 +243,16 @@ body {
     .reference__header {
         width: 937px;
         text-align: center;
-        margin-top: 177px;
+        margin-top: 0px;
         margin-bottom: 73px;
     }
     .reference__main {
-        grid-template-columns: 300px 300px 300px;
-        gap: 80px;
+        grid-template-columns: 280px 280px 280px;
+        gap: 50px;
         justify-content: center;
     }
     .reference__item {
         width: 100%;
-        margin-bottom: 73px;
         position: relative;
     }
     .reference__item-textbox {
@@ -209,7 +274,12 @@ body {
     .reference__item-heading {
         margin-top: 0px;
     }
-
+    .button--reference {
+        margin-top: 73px;
+    }
+    .duvera {
+        margin-bottom: 177px;
+    }
     .duvera__content {
         margin-left: 8%;
     }
@@ -217,18 +287,22 @@ body {
         margin-bottom: 50px;
     }
 }
-@media screen and (min-width: 1660px) {
+
+@media screen and (min-width: 1281px) {
     .navbar {
-        width: 1510px;
+        max-width: 1510px;
     }
     
     .header__heading {
-        width: 1350px;
+        max-width: 1350px;
     }
     
+    .sluzby__header {
+        width: 890px;
+    }
     .sluzby__item {
         grid-template-columns: 729px 1fr;
-        width: 1540px;
+        max-width: 1540px;
     }
 
     .sluzby__item:nth-child(even) {
@@ -236,6 +310,15 @@ body {
     }
 
     .reference__main {
+        grid-template-columns: 390px 390px 390px;
+    }
+    .footer {
+        margin-top: 220px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .reference__main {
         grid-template-columns: 450px 450px 450px;
+        gap: 80px;
     }
 }
