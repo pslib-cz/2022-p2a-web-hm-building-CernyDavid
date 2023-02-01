@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HM Building | Služby | Rekonstrukce</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sluzby.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <img class="navbar__logo" src="../media/logo.png" alt="logo firmy">
+            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="../media/icon hamburger-menu.svg" alt="hamburger menu"></a>
+            <menu class="navbar__menu navbar__menu--hidden">
+                <li><a class="navbar__link navbar__link--other" href="../index.html">DOMŮ</a></li>
+                <li><a class="navbar__link navbar__link--current" href="../index.html#sluzby">SLUŽBY</a></li>
+                <li><a class="navbar__link navbar__link--other" href="../reference.html">REFERENCE</a></li>
+                <li><a class="navbar__link navbar__link--other" href="../o-nas.html">O NÁS</a></li>
+                <li><a class="navbar__link navbar__link--other" href="../kontakt.html">KONTAKT</a></li>
+            </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".navbar__menu-toggle");
+            for (const btn of hamburgerButtons) {
+              btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".navbar__menu");
+                for (const menu of menus) {
+                  menu.classList.toggle("navbar__menu--hidden");
+                }
+              }
+            }
+          </script>
+        <div class="header__main header__main--small">
+            <h1 class="header__heading">HM Building.cz s.r.o.
+                <span class="header__subheading">liberecká stavební společnost</span></h1>  
+        </div>
+    </div>
+    <div class="sluzba">
+        <h2 class="sluzba__heading">Rekonstrukce domů</h2>
+        <div class="sluzba__main">
+            <p class="sluzba__text">Provádíme veškeré práce spojené s rekonstrukcí stávajících objektů.</p>
+            <p class="sluzba__list-heading"><bold class=text-bold>Dodatečné izolování objektů</bold></p>
+            <ul class="sluzba__list">
+                <li class="sluzba__list-item">zemní práce</li>
+                <li class="sluzba__list-item">základové konstrukce</li>
+            </ul>
+            <p class="sluzba__list-heading"><bold class=text-bold>Zateplení objektů</bold></p>
+            <ul class="sluzba__list">
+                <li class="sluzba__list-item">zateplení fasád</li>
+                <li class="sluzba__list-item">výměna oken a otvorových výplní</li>
+            </ul>
+            <p class="sluzba__list-heading"><bold class=text-bold>Změna vnitřních i vnějších dispozic stávajících objektů</bold></p>
+            <ul class="sluzba__list">
+                <li class="sluzba__list-item">bourací práce</li>
+                <li class="sluzba__list-item">zednické práce</li>
+                <li class="sluzba__list-item">sádrokartonářské práce</li>
+            </ul>
+            <p class="sluzba__list-heading"><bold class=text-bold>Demolice stávajících objektů</bold></p>
+            <ul class="sluzba__list">
+                <li class="sluzba__list-item">bourací a demoliční práce</li>
+                <li class="sluzba__list-item">odizolování konstrukcí pod/nad úrovní terénu</li>
+                <li class="sluzba__list-item">zateplení objektů</li>
+                <li class="sluzba__list-item">úprava vnitřních dispozic</li>
+                <li class="sluzba__list-item">výměna otvorových výplní</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h2 class="footer__heading">Plácneme si pro Váš projekt?</h2>
+        <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <button class="button button--footer">Nezávazně poptat</button>
+    </div>
+</body>
+</html>

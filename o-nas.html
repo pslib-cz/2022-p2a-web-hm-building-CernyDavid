@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HM Building | O nás</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/o-nas.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
+            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="./media/icon hamburger-menu.svg" alt="hamburger menu"></a>
+            <menu class="navbar__menu navbar__menu--hidden">
+                <li><a class="navbar__link navbar__link--other" href="./index.html">DOMŮ</a></li>
+                <li><a class="navbar__link navbar__link--other" href="./index.html#sluzby">SLUŽBY</a></li>
+                <li><a class="navbar__link navbar__link--other" href="./reference.html">REFERENCE</a></li>
+                <li><a class="navbar__link navbar__link--current" href="./o-nas.html">O NÁS</a></li>
+                <li><a class="navbar__link navbar__link--other" href="./kontakt.html">KONTAKT</a></li>
+            </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".navbar__menu-toggle");
+            for (const btn of hamburgerButtons) {
+              btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".navbar__menu");
+                for (const menu of menus) {
+                  menu.classList.toggle("navbar__menu--hidden");
+                }
+              }
+            }
+          </script>
+        <div class="header__main header__main--small">
+            <h1 class="header__heading">HM Building.cz s.r.o.
+                <span class="header__subheading">liberecká stavební společnost</span></h1>  
+        </div>
+    </div>
+    <div class="o-nas">
+        <h2 class="o-nas__heading">O nás</h2>
+        <div class="o-nas__main">
+            <p class="o-nas__text">Společnost <bold class=text-bold>HM Building.cz s.r.o.</bold> nabízí své <bold class=text-bold>služby ve stavebnictví od roku 2015</bold>, a to převážně po <bold class=text-bold>Libereckém kraji</bold>.</p>
+            <p class="o-nas__text"> V oboru pozemního stavitelství provádíme <bold class=text-bold>stavbu a rekonstrukci</bold>:</p>
+            <ul class="o-nas__list">
+                <li class="o-nas__list-item">průmyslových staveb</li>
+                <li class="o-nas__list-item">obytných staveb</li>
+                <li class="o-nas__list-item">staveb občanské vybavenosti</li>
+                <li class="o-nas__list-item">komunikacích vozidlových, ale i pěších</li>
+            </ul>
+            <p class="o-nas__text">Zakázky můžeme řešit tzv. <bold class=text-bold>na klíč</bold>, kde jsme schopni zajistit dodávky a montáž elektroinstalace NN a VN, zdravotně – technické instalace, ústředního vytápění, vzduchotechniky, MaR, případně jsme schopni, po dohodě s investorem, dodat pouze některou ucelenou část celkové zakázky.</p>
+            <p class="o-nas__text">Naše firma taktéž zajišťuje <bold class=text-bold>projekční služby a služby týkající se statického posouzení staveb</bold> v oboru pozemního stavitelství a dále jsme schopni zajistit <bold class=text-bold>investorsko–inženýrské služby</bold>.</p>
+            <p class="o-nas__text"><bold class=text-bold>Záruční doba</bold> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h2 class="footer__heading">Plácneme si pro Váš projekt?</h2>
+        <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <button class="button button--footer">Nezávazně poptat</button>
+    </div>
+</body>
+</html>

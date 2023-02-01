@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HM building</title>
+    <title>HM Building | Reference</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/layout.css">
@@ -12,17 +12,27 @@
     <div class="header">
         <nav class="navbar">
             <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
-            <img class="navbar__hamburger" src="./media/icon hamburger-menu.svg" alt="hamburger menu">
-            <menu class="navbar__menu">
+            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="./media/icon hamburger-menu.svg" alt="hamburger menu"></a>
+            <menu class="navbar__menu navbar__menu--hidden">
                 <li><a class="navbar__link navbar__link--other" href="./index.html">DOMŮ</a></li>
                 <li><a class="navbar__link navbar__link--other" href="./index.html#sluzby">SLUŽBY</a></li>
                 <li><a class="navbar__link navbar__link--current" href="./reference.html">REFERENCE</a></li>
-                <li><a class="navbar__link navbar__link--other" href="">O NÁS</a></li>
-                <li><a class="navbar__link navbar__link--other" href="">KONTAKT</a></li>
+                <li><a class="navbar__link navbar__link--other" href="./o-nas.html">O NÁS</a></li>
+                <li><a class="navbar__link navbar__link--other" href="./kontakt.html">KONTAKT</a></li>
             </menu>
         </nav>
-        <div class="header__main">
-            <button class="button button--colored button--header"><a href="./index.html#sluzby">pokračovat</a></button>  
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".navbar__menu-toggle");
+            for (const btn of hamburgerButtons) {
+              btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".navbar__menu");
+                for (const menu of menus) {
+                  menu.classList.toggle("navbar__menu--hidden");
+                }
+              }
+            }
+          </script>
+        <div class="header__main header__main--small">
             <h1 class="header__heading">HM Building.cz s.r.o.
                 <span class="header__subheading">liberecká stavební společnost</span></h1>  
         </div>
@@ -30,7 +40,7 @@
     <div class="reference" id="reference">
         <div class="reference__header">
             <h2 class="reference__heading">Reference</h2>
-            <p class="reference__description">Stojí za námi kvalitně vyhotovené zakázky dle konkrétních požadavků zadavatelů podepřené letitými zkušenostmi ve stavebnictví. To, že obrátit se na právě nás je vhodná volba potvrdí naši klienti, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+            <p class="reference__description">Stojí za námi <bold class="text-bold">kvalitně vyhotovené zakázky</bold> dle konkrétních požadavků zadavatelů <bold class="text-bold">podepřené letitými zkušenostmi ve stavebnictví</bold>. To, že <bold class="text-bold">obrátit se na právě nás je vhodná volba potvrdí naši klienti</bold>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
         </div>
         <div class="reference__main">
             <div class="reference__item">

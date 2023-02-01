@@ -29,6 +29,10 @@ h3 {
     font-size: 20px;
     line-height: 27px;
 }
+.text-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
 .header__heading {
     font-weight: 800;
     color: white;
@@ -102,6 +106,10 @@ h3 {
     display: block;
     padding: 12px 40px 12px 40px;
     font-weight: 700;
+}
+.button__link {
+    text-decoration: none;
+    color: inherit;
 }
 .button--outlined {
     color: var(--primary);
@@ -184,7 +192,9 @@ h3 {
         line-height: 41px;
         text-transform: uppercase;
     }
-
+    .text-bold {
+        font-family: 'Open Sans', sans-serif;
+    }
     .navbar__link--current {
         background-color: var(--primary);
         color: white;
@@ -231,10 +241,6 @@ h3 {
 
     .button--header {
         position: relative;
-    }
-    .button--header a {
-        text-decoration: none;
-        color:white;
     }
 
     .button--header a::after {
