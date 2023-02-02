@@ -44,13 +44,22 @@
             <p class="kontakt__description">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
         </div>
         <div class="kontakt__main">
+            <div class="kontakt__info">
+                <p class="kontakt__info-item kontakt__info-item--tel">+420 775 550 564</p>
+                <p class="kontakt__info-item kontakt__info-item--mail">stavby@hm-building.cz</p>
+                <p class="kontakt__info-item kontakt__info-item--address">Křižanská 12, Liberec XXII-Horní Suchá</p>
+            </div>
+            <div class="kontakt__map-container">
+                <img class="kontakt__map" src="./media/mapa.jpg" alt="mapa ukazující sídlo firmy">
+                <div class="kontakt__map-overlay"></div>
+            </div>
 
         </div>
         <div class="kontakt__form">
             <h3 class="kontakt__form-heading">Nezávazná poptávka služeb</h3>
             <p class="kontakt__form-text">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             
-            <form name="contact__form-main">
+            <form name="kontakt__form-main">
                 
                 <div class="kontakt__form-item">
                     <label for="name"><bold class="text-bold">Jméno a příjmení</bold></label>
@@ -73,13 +82,14 @@
                         <option value="Prum stavba">Průmyslová stavba</option>
                         <option value="Komunikace">Komunikace</option>
                     </select>
+                    <i class="kontakt__arrow-down"></i>
                 </div>
                 <div class="kontakt__form-item">
                     <label for="notes"><bold class="text-bold">Poznámka</bold></label>
                     <textarea class="kontakt__form-input kontakt__form-input--notes" type="text" id="notes" name="notes"></textarea>
                 </div>
                 
-                <button class="button button--colored">Odeslat nezávaznou poptávku</button>
+                <button class="button button--colored button--kontakt">Odeslat nezávaznou poptávku</button>
             </form>
 
         </div>
