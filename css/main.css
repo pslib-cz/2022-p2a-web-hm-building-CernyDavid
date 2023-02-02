@@ -99,6 +99,10 @@ h3 {
     padding: 0;
     object-fit: cover;
 }
+.reference__link {
+    text-decoration: none;
+    color: inherit;
+}
 .highlight {
     color: var(--primary);
 }
