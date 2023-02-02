@@ -47,26 +47,26 @@
 
         </div>
         <div class="kontakt__form">
-            <h3>Nezávazná poptávka služeb</h3>
-            <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+            <h3 class="kontakt__form-heading">Nezávazná poptávka služeb</h3>
+            <p class="kontakt__form-text">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             
             <form name="contact__form-main">
                 
                 <div class="kontakt__form-item">
-                    <label for="name">Jméno a příjmení</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name"><bold class="text-bold">Jméno a příjmení</bold></label>
+                    <input class="kontakt__form-input" type="text" id="name" name="name" required>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email"><bold class="text-bold">E-mail</bold></label>
+                    <input class="kontakt__form-input" type="email" id="email" name="email" required>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone"><bold class="text-bold">Telefon</bold></label>
+                    <input class="kontakt__form-input" type="tel" id="phone" name="phone" required>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="service">Poptávaná služba</label>
-                    <select type="tel" id="service" name="service" required>
+                    <label for="service"><bold class="text-bold">Poptávaná služba</bold></label>
+                    <select class="kontakt__form-input kontakt__form-input--select" type="text" id="service" name="service" required>
                         <option value=""></option>
                         <option value="Novostavba">Novostavba</option>
                         <option value="Rekonstrukce">Rekonstrukce</option>
@@ -75,8 +75,8 @@
                     </select>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="notes">poznámka</label>
-                    <input type="text" id="notes" name="notes"></input>
+                    <label for="notes"><bold class="text-bold">Poznámka</bold></label>
+                    <textarea class="kontakt__form-input kontakt__form-input--notes" type="text" id="notes" name="notes"></textarea>
                 </div>
                 
                 <button class="button button--colored">Odeslat nezávaznou poptávku</button>
