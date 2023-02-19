@@ -10,7 +10,7 @@ p {
     font-size: 14px;
     line-height: 19px;
 }
-h1 {
+h1, .page-header__heading {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -146,7 +146,15 @@ h2 {
     text-decoration: none;
 }
 
-
+.kontakt__info-item--tel::before {
+    background-image: url(../media/local_phone_24px.svg);
+}
+.kontakt__info-item--mail::before {
+    background-image: url(../media/mail_24px.svg);
+}
+.kontakt__info-item--address::before {
+    background-image: url(../media/room_24px.svg);
+}
 
 @media screen and (max-width: 960px) {
     .navbar__link {
@@ -164,7 +172,7 @@ h2 {
         font-size: 16px;
         line-height: 22px;
     }
-    .section-heading {
+    .section-heading, .page-header__heading {
         font-size: 35px;
     }
     h2 {
@@ -188,7 +196,7 @@ h2 {
     h1 {
         font-size: 90px;
     }
-    .section-heading {
+    .section-heading, .page-header__heading {
         font-size: 45px;
     }
     h2 {
@@ -265,7 +273,7 @@ h2 {
         line-height: 82px;
         padding-top: 0px;
     }
-    .section-heading {
+    .section-heading, .page-header__heading {
         font-size: 60px;
         line-height: 82px;
     }

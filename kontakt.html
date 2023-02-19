@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/kontakt.css">
+    <link rel="stylesheet" href="./css/forms.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <nav class="navbar">
-            <img class="navbar__logo" src="./media/logo.png" alt="logo firmy">
-            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="./media/icon hamburger-menu.svg" alt="hamburger menu"></a>
+            <a href="./index.html"><img class="navbar__logo" src="./media/logo.png" alt="logo firmy"></a>
+            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="./media/hamburger_icon.svg" alt="hamburger menu"></a>
             <menu class="navbar__menu navbar__menu--hidden">
                 <li><a class="navbar__link navbar__link--other" href="./index.html">DOMŮ</a></li>
                 <li><a class="navbar__link navbar__link--other" href="./index.html#sluzby">SLUŽBY</a></li>
@@ -37,17 +37,17 @@
             <h1 class="header__heading">HM Building.cz s.r.o.
                 <span class="header__subheading">liberecká stavební společnost</span></h1>  
         </div>
+    </header>
+    <div class="page-header">
+        <p class="page-header__heading">Kontaktujte nás</p>
+        <p class="page-header__description">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
     </div>
-    <div class="kontakt">
-        <div class="kontakt__header">
-            <h2 class="kontakt__heading">Kontaktujte nás</h2>
-            <p class="kontakt__description">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
-        </div>
+    <div class="kontakt">    
         <div class="kontakt__main">
             <div class="kontakt__info">
-                <p class="kontakt__info-item kontakt__info-item--tel">+420 775 550 564</p>
-                <p class="kontakt__info-item kontakt__info-item--mail">stavby@hm-building.cz</p>
-                <p class="kontakt__info-item kontakt__info-item--address">Křižanská 12, Liberec XXII-Horní Suchá</p>
+                <a href="#" class="kontakt__link"><p class="kontakt__info-item kontakt__info-item--tel">+420 775 550 564</p></a>
+                <a href="#" class="kontakt__link"><p class="kontakt__info-item kontakt__info-item--mail">stavby@hm-building.cz</p></a>
+                <a href="#" class="kontakt__link"><p class="kontakt__info-item kontakt__info-item--address">Křižanská 12, Liberec XXII-Horní Suchá</p></a>
             </div>
             <div class="kontakt__map-container">
                 <img class="kontakt__map" src="./media/mapa.jpg" alt="mapa ukazující sídlo firmy">
@@ -56,27 +56,27 @@
 
         </div>
         <div class="kontakt__form">
-            <h3 class="kontakt__form-heading">Nezávazná poptávka služeb</h3>
+            <p class="kontakt__form-heading">Nezávazná poptávka služeb</p>
             <p class="kontakt__form-text">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             
             <form name="kontakt__form-main">
                 
                 <div class="kontakt__form-item">
-                    <label for="name"><bold class="text-bold">Jméno a příjmení</bold></label>
+                    <label for="name"><span class="text-bold">Jméno a příjmení</span></label>
                     <input class="kontakt__form-input" type="text" id="name" name="name" required>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="email"><bold class="text-bold">E-mail</bold></label>
+                    <label for="email"><span class="text-bold">E-mail</span></label>
                     <input class="kontakt__form-input" type="email" id="email" name="email" required>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="phone"><bold class="text-bold">Telefon</bold></label>
+                    <label for="phone"><span class="text-bold">Telefon</span></label>
                     <input class="kontakt__form-input" type="tel" id="phone" name="phone" required>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="service"><bold class="text-bold">Poptávaná služba</bold></label>
-                    <select class="kontakt__form-input kontakt__form-input--select" type="text" id="service" name="service" required>
-                        <option value=""></option>
+                    <label for="service"><span class="text-bold">Poptávaná služba</span></label>
+                    <select class="kontakt__form-input kontakt__form-input--select" id="service" name="service" required>
+                        <option value="">&nbsp;</option>
                         <option value="Novostavba">Novostavba</option>
                         <option value="Rekonstrukce">Rekonstrukce</option>
                         <option value="Prum stavba">Průmyslová stavba</option>
@@ -85,8 +85,8 @@
                     <i class="kontakt__arrow-down"></i>
                 </div>
                 <div class="kontakt__form-item">
-                    <label for="notes"><bold class="text-bold">Poznámka</bold></label>
-                    <textarea class="kontakt__form-input kontakt__form-input--notes" type="text" id="notes" name="notes"></textarea>
+                    <label for="notes"><span class="text-bold">Poznámka</span></label>
+                    <textarea class="kontakt__form-input kontakt__form-input--notes" id="notes" name="notes"></textarea>
                 </div>
                 
                 <button class="button button--colored button--kontakt">Odeslat nezávaznou poptávku</button>
