@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/sluzby.css">
+    <link rel="stylesheet" href="../css/lists.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <nav class="navbar">
-            <img class="navbar__logo" src="../media/logo.png" alt="logo firmy">
-            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="../media/icon hamburger-menu.svg" alt="hamburger menu"></a>
+            <a href="../index.html"><img class="navbar__logo" src="../media/logo.png" alt="logo firmy"></a>
+            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="../media/hamburger_icon.svg" alt="hamburger menu"></a>
             <menu class="navbar__menu navbar__menu--hidden">
                 <li><a class="navbar__link navbar__link--other" href="../index.html">DOMŮ</a></li>
                 <li><a class="navbar__link navbar__link--current" href="../index.html#sluzby">SLUŽBY</a></li>
@@ -37,11 +37,13 @@
             <h1 class="header__heading">HM Building.cz s.r.o.
                 <span class="header__subheading">liberecká stavební společnost</span></h1>  
         </div>
-    </div>
+    </header>
     <div class="sluzba">
-        <h2 class="sluzba__heading">Průmyslové stavby</h2>
+        <div class="page-header page-header--long">
+            <h1 class="page-header__heading">Průmyslové stavby</h1>            
+        </div>
         <div class="sluzba__main">
-            <p class="sluzba__text">Realizujeme <bold class="text-bold">průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu)</bold>, z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím <bold class="text-bold">se dostáváme na přijatelné ceny</bold>.</p>
+            <p class="sluzba__text">Realizujeme <span class="text-bold">průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu)</span>, z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím <span class="text-bold">se dostáváme na přijatelné ceny</span>.</p>
             <ul class="sluzba__list">
                 <li class="sluzba__list-item">zemní práce</li>
                 <li class="sluzba__list-item">základové konstrukce</li>
@@ -55,10 +57,10 @@
         </div>
 
     </div>
-    <div class="footer">
-        <h2 class="footer__heading">Plácneme si pro Váš projekt?</h2>
+    <footer class="footer">
+        <p class="section-heading footer__heading">Plácneme si pro Váš projekt?</p>
         <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <button class="button button--footer"><a class="button__link" href="../kontakt.html">Nezávazně poptat</a></button>
-    </div>
+        <a href="../kontakt.html"  class="button button--footer">Nezávazně poptat</a>
+    </footer>
 </body>
 </html>

@@ -179,6 +179,15 @@ body {
     object-fit: cover;
 }
 
+.sluzba {
+    width: 90vw;
+    max-width: 1510px;
+    margin: 0px auto;
+}
+.sluzba__text {
+    max-width: 1120px;
+}
+
 @media screen and (max-width: 960px) {
 
     .header__main--small {
@@ -360,7 +369,9 @@ body {
         max-width: 800px;
         margin-bottom: 100px;
     }
-
+    .page-header--long {
+        max-width: 1000px;
+    }
     .button--kontakt {
         margin-top: 20px;
     }

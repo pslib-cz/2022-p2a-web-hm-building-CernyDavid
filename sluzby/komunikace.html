@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/sluzby.css">
+    <link rel="stylesheet" href="../css/lists.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <nav class="navbar">
-            <img class="navbar__logo" src="../media/logo.png" alt="logo firmy">
-            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="../media/icon hamburger-menu.svg" alt="hamburger menu"></a>
+            <a href="../index.html"><img class="navbar__logo" src="../media/logo.png" alt="logo firmy"></a>
+            <a class="navbar__menu-toggle" href="javascript:void(0)"><img class="navbar__hamburger" src="../media/hamburger_icon.svg" alt="hamburger menu"></a>
             <menu class="navbar__menu navbar__menu--hidden">
                 <li><a class="navbar__link navbar__link--other" href="../index.html">DOMŮ</a></li>
                 <li><a class="navbar__link navbar__link--current" href="../index.html#sluzby">SLUŽBY</a></li>
@@ -37,18 +37,20 @@
             <h1 class="header__heading">HM Building.cz s.r.o.
                 <span class="header__subheading">liberecká stavební společnost</span></h1>  
         </div>
-    </div>
+    </header>
     <div class="sluzba">
-        <h2 class="sluzba__heading">Komunikace a zpevněné plochy</h2>
+        <div class="page-header page-header--long">
+            <h1 class="page-header__heading">Komunikace a zpevněné plochy</h1>            
+        </div>
         <div class="sluzba__main">
-            <p class="sluzba__text">Komunikace a zpevněné plochy provádíme <bold class="text-bold">včetně zemních prací, konstrukcí podkladních</bold> a souvisejících objektů, jako jsou <bold class="text-bold">odvodnění, zpevnění svahů, opěrné zdi</bold> atd.</p>
-            <p class="sluzba__list-heading"><bold class=text-bold>Kryt komunikace</bold></p>
+            <p class="sluzba__text">Komunikace a zpevněné plochy provádíme <span class="text-bold">včetně zemních prací, konstrukcí podkladních</span> a souvisejících objektů, jako jsou <span class="text-bold">odvodnění, zpevnění svahů, opěrné zdi</span> atd.</p>
+            <p class="sluzba__list-heading"><span class=text-bold>Kryt komunikace</span></p>
             <ul class="sluzba__list">
                 <li class="sluzba__list-item">živočišný</li>
                 <li class="sluzba__list-item">betonový</li>
                 <li class="sluzba__list-item">dlážděný (kámen, betonová dlažba...)</li>
             </ul>
-            <p class="sluzba__text">Při realizaci jakékoliv zpevněné plochy <bold class="text-bold">dokážeme navrhnout celkovou skladbu konstrukce</bold>, s ohledem na její způsob použití a umístění.</p>
+            <p class="sluzba__text">Při realizaci jakékoliv zpevněné plochy <span class="text-bold">dokážeme navrhnout celkovou skladbu konstrukce</span>, s ohledem na její způsob použití a umístění.</p>
             <ul class="sluzba__list">
                 <li class="sluzba__list-item">zemní práce</li>
                 <li class="sluzba__list-item">podklady pro komunikace</li>
@@ -57,10 +59,10 @@
         </div>
 
     </div>
-    <div class="footer">
-        <h2 class="footer__heading">Plácneme si pro Váš projekt?</h2>
+    <footer class="footer">
+        <p class="section-heading footer__heading">Plácneme si pro Váš projekt?</p>
         <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <button class="button button--footer"><a class="button__link" href="../kontakt.html">Nezávazně poptat</a></button>
-    </div>
+        <a href="../kontakt.html"  class="button button--footer">Nezávazně poptat</a>
+    </footer>
 </body>
 </html>
