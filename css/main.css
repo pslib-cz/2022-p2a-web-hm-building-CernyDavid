@@ -16,14 +16,14 @@ h1 {
     font-size: 30px;
     line-height: 41px;
 }
-h2 {
+.section-heading {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
     letter-spacing: -0.05em;
 }
-h3 {
+h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -107,9 +107,10 @@ h3 {
     color: var(--primary);
 }
 .button {
-    display: block;
+    display: inline-block;
     padding: 12px 40px 12px 40px;
     font-weight: 700;
+    text-decoration: none;
 }
 .button__link {
     text-decoration: none;
@@ -164,10 +165,10 @@ h3 {
         font-size: 16px;
         line-height: 22px;
     }
-    h2 {
+    .section-heading {
         font-size: 35px;
     }
-    h3 {
+    h2 {
         font-size: 25px;
     }
     .duvera__text {
@@ -188,10 +189,10 @@ h3 {
     h1 {
         font-size: 90px;
     }
-    h2 {
+    .section-heading {
         font-size: 45px;
     }
-    h3 {
+    h2 {
         font-size: 30px;
         line-height: 41px;
         text-transform: uppercase;
@@ -247,7 +248,7 @@ h3 {
         position: relative;
     }
 
-    .button--header a::after {
+    .button--header::after {
         content: url(../media/arrow_back_24px.svg);
         margin-left: 20px;
         position: absolute;
@@ -265,7 +266,7 @@ h3 {
         line-height: 82px;
         padding-top: 0px;
     }
-    h2 {
+    .section-heading {
         font-size: 60px;
         line-height: 82px;
     }

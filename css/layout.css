@@ -4,12 +4,10 @@ body {
 }
 .header {
     display: block;
-    width: 100vw;
     position: relative;
 }
 .navbar {
     height: 109px;
-    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,6 +57,9 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+.reference {
+    text-align: center;
+}
 .reference__item {
     display: block;
     width: 320px;
@@ -95,11 +96,8 @@ body {
 .footer {
     height: 75vw;
     max-height: 360px;
-    width: 100vw;
     margin-top: 96px;
-}
-.button--footer {
-    margin: 26px auto 41px auto;
+    text-align: center;
 }
 .footer__heading {
     padding-top: 66px;
@@ -108,6 +106,7 @@ body {
 }
 .footer__text {
     margin: 0px;
+    margin-bottom: 2em;
 }
 .button--header {
     display: none;
@@ -118,6 +117,12 @@ body {
 }
 .navbar__menu--hidden {
     display: none;
+}
+.navbar a {
+    display: block;
+}
+.reference__link {
+    display: block;
 }
 
 @media screen and (max-width: 960px) {
@@ -208,8 +213,7 @@ body {
         margin-bottom: 65px;
     }
     .button--header {
-        display: block;
-        width: 244px;
+        display: inline-block;
         margin: 0px auto 84px auto;
         padding: 16px 85px 16px 50px;
     }
