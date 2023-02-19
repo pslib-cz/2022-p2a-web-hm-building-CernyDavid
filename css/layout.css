@@ -132,6 +132,14 @@ body {
     margin: 0px auto 40px auto;
 }
 
+.page-header--no-margin {
+    margin-bottom: 0px;
+}
+
+.page-header__heading {
+    margin-bottom: 0px;
+}
+
 .kontakt__info {
     width: 90vw;
     max-width: 600px;
@@ -185,6 +193,15 @@ body {
     margin: 0px auto;
 }
 .sluzba__text {
+    max-width: 1120px;
+}
+
+.o-nas {
+    width: 90vw;
+    max-width: 1510px;
+    margin: 0px auto;
+}
+.o-nas__text {
     max-width: 1120px;
 }
 
@@ -368,6 +385,9 @@ body {
         text-align: center;
         max-width: 800px;
         margin-bottom: 100px;
+    }
+    .page-header--no-margin {
+        margin-bottom: 20px;
     }
     .page-header--long {
         max-width: 1000px;
