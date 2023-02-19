@@ -26,6 +26,11 @@
     color: var(--primary);
     font-size: 25px;
 }
+
+.sluzba__list-item:has( .sluzba__list--nested)::marker {
+    content: none;
+}
+
 @media screen and (min-width: 961px) {
     .sluzba__list, .o-nas__list {
         margin-bottom: 52px;
