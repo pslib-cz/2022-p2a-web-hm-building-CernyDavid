@@ -6,7 +6,7 @@
     max-width: 600px;
     margin: 0px auto 34px auto;
 }
-.gallery__main {
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -42,7 +42,7 @@
     .gallery__item {
         width: 100%;
     }
-    .gallery__main {
+    .gallery {
         grid-template-columns: repeat(auto-fit, 320px);
         gap: 25px 35px;
         justify-content: center;
@@ -63,7 +63,7 @@
 }
 
 @media screen and (min-width: 1281px) {
-    .gallery__main {
+    .gallery {
         grid-template-columns: repeat(auto-fit, 480px);
     }
 }
